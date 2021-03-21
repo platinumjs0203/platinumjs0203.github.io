@@ -1,0 +1,246 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: "Fredoka One", cursive;
+  background-color: #34495e;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin: 5px 8px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #3498db;
+}
+button:hover {
+  background-color: #2ecc71;
+  transition: 0.35s;
+}
+li {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+}
+li span {
+  display: flex;
+  align-items: center;
+}
+
+/* ============== main =============== */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* === left === */
+.left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  width: 100%;
+  height: 100vh;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+  width: 500px;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 36px;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+  width: 500px;
+}
+.famous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 36px;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+  width: 500px;
+}
+.todo-list_fin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+  width: 500px;
+}
+.todo-list_fin h2 {
+  margin-bottom: 22px;
+}
+.todo-list_fin button {
+  grid-column-start: 3;
+}
+/* === center === */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+}
+.todo-form input {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  color: #2ecc71;
+}
+.todo-form input:focus {
+  width: 530px;
+  border-color: #2ecc71;
+}
+.todo-form input::placeholder {
+  color: #3498db;
+}
+.todo-form input:focus::placeholder {
+  color: #2ecc71;
+}
+.todo-list {
+  width: 500px;
+  font-size: 28px;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+}
+
+/* === right === */
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.right h2 {
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+}
+.img_box {
+  width: 500px;
+  height: 400px;
+  border: #2ecc71 1px solid;
+  margin: 15px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_box img {
+  width: 380px;
+  height: 380px;
+}
+.poke_name {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poke_type {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============= form =============== */
+.login_box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2c3e50;
+  text-align: center;
+}
+.login_box h1 {
+  margin: 28px;
+}
+.input_name {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  font-size: 14px;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  color: #2ecc71;
+}
+.input_name::placeholder {
+  color: #3498db;
+}
+.input_name:focus::placeholder {
+  color: #2ecc71;
+}
+.input_name:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+.login_btn {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 40px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.login_btn:hover {
+  background-color: #16a085;
+  border-color: #2ecc71;
+}
+
+.invisible {
+  display: none;
+}
